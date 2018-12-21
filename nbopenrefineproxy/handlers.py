@@ -15,6 +15,8 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
         cmd = ['openrefine-2.8/refine',
                '-p', str(self.port)
                ]
+        with open('test.txt','w') as f:
+            f.write(str(self.port))
         return cmd
 
     def get_env(self):
