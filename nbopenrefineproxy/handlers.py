@@ -15,14 +15,14 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
         cmd = ['openrefine-2.8/refine',
                '-p', str(self.port)
                ]
-        with open('test.txt','w') as f:
+        with open('openrefine.txt','w') as f:
             f.write(str(self.port))
-        os.environ['OPENREFINE_PORT']=str(self.port)
+            
         return cmd
 
     def get_env(self):
         return {}
-
+    
 
 class AddSlashHandler(IPythonHandler):
     """Handler for adding trailing slash to URLs that need them"""
