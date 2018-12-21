@@ -16,7 +16,7 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
         os.makedirs(path, exist_ok=True)
         cmd = ['openrefine-2.8/refine',
                '-p', str(self.port),
-               #'-d',path
+               '-d',path
                ]
         with open('openrefine.txt','w') as f:
             f.write(str(self.port))
