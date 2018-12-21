@@ -6,7 +6,7 @@ from notebook.base.handlers import IPythonHandler
 from notebook.utils import url_path_join as ujoin
 
 from nbserverproxy.handlers import SuperviseAndProxyHandler
-
+import os
 
 class OpenRefineProxyHandler(SuperviseAndProxyHandler):
     name = 'OpenRefine'
@@ -17,6 +17,7 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
                ]
         with open('test.txt','w') as f:
             f.write(str(self.port))
+        os.environ['OPENREFINE_PORT']=str(self.port)
         return cmd
 
     def get_env(self):
