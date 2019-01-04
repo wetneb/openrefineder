@@ -12,7 +12,7 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
     name = 'OpenRefine'
 
     def get_cmd(self):
-        path='/home/jovyan/openrefine'
+        path = os.path.join(os.environ['HOME'], 'openrefine')
         os.makedirs(path, exist_ok=True)
         cmd = ['openrefine-2.8/refine',
                '-p', str(self.port),
