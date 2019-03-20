@@ -1,9 +1,9 @@
 # openrefineder
 💠 + 📚 OpenRefine on Binder!
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/wetneb/openrefineder/master)
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=%2Fopenrefine) (launch open refine)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/wetneb/openrefineder/master?urlpath=%2Fopenrefine) (launch open refine)
 
 Small demo of using [OpenRefine](http://openrefine.org/) on binder.
 Still under 👷🚧🏗!
